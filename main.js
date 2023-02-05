@@ -79,36 +79,7 @@ const pAequorFactory = (specimenNum, dna) => {
 
 // create 30 different pAequor objects and store them in an array
 // Note: Assuming there's a better way to do this but didn't find it yet
-const labArray = {
-  org1 : pAequorFactory(1, mockUpStrand()),
-  org2 : pAequorFactory(2, mockUpStrand()),
-  org3 : pAequorFactory(3, mockUpStrand()),
-  org4 : pAequorFactory(4, mockUpStrand()),
-  org5 : pAequorFactory(5, mockUpStrand()),
-  org6 : pAequorFactory(6, mockUpStrand()),
-  org7 : pAequorFactory(7, mockUpStrand()),
-  org8 : pAequorFactory(8, mockUpStrand()),
-  org9 : pAequorFactory(9, mockUpStrand()),
-  org10 : pAequorFactory(10, mockUpStrand()),
-  org11 : pAequorFactory(11, mockUpStrand()),
-  org12 : pAequorFactory(12, mockUpStrand()),
-  org13 : pAequorFactory(13, mockUpStrand()),
-  org14 : pAequorFactory(14, mockUpStrand()),
-  org15 : pAequorFactory(15, mockUpStrand()),
-  org16 : pAequorFactory(16, mockUpStrand()),
-  org17 : pAequorFactory(17, mockUpStrand()),
-  org18 : pAequorFactory(18, mockUpStrand()),
-  org19 : pAequorFactory(19, mockUpStrand()),
-  org20 : pAequorFactory(20, mockUpStrand()),
-  org21 : pAequorFactory(21, mockUpStrand()),
-  org22 : pAequorFactory(22, mockUpStrand()),
-  org23 : pAequorFactory(23, mockUpStrand()),
-  org24 : pAequorFactory(24, mockUpStrand()),
-  org25 : pAequorFactory(25, mockUpStrand()),
-  org26 : pAequorFactory(26, mockUpStrand()),
-  org27 : pAequorFactory(27, mockUpStrand()),
-  org28 : pAequorFactory(28, mockUpStrand()),
-  org29 : pAequorFactory(29, mockUpStrand()),
-  org30 : pAequorFactory(30, mockUpStrand())
-};
-console.log(labArray);
+const labArray = [];
+  for (let x = 1; x < 31; x++) {
+    labArray.push(pAequorFactory(x, mockUpStrand()));
+  };
